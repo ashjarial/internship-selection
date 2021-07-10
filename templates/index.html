@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>internship_predictor</title>
+</head>
+<body bgcolor="grey">
+<div>
+    <form action="{{url_for('predict')}}"method="post">
+        <h4 style="text-align:centre;">
+            enter your ongoing cgpi:<br>
+            <input type="text" name="cgpi" placeholder="cgpi" required="required" /><br>
+            enter your 12th percentage:<br>
+            <input type="text" name="12th percentage" placeholder="12th" required="required" /><br>
+            enter your 10th percentage:<br>
+            <input type="text" name="10th percentage" placeholder="10th" required="required" /><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Prediction</button><br>
+        </h4>
+            <h4>{{prediction_text}}</h4>
+
+    </form>
+</div>
+
+
+</body>
+</html>
